@@ -4,7 +4,7 @@
 // here's an example of a function that excepts
 // a closure as an argument
 //
-// we require a closure to implement a FnOnce tarin
+// we require a closure to implement a FnOnce tarit
 // so the f can be called only once
 //
 // also we define a lifetime for our function with a 'static lifetime modifier
@@ -21,12 +21,12 @@ fn main() {
 
 
     // the move keyword here simply takes ownership
-    // of all the variabl used inside of the closure
+    // of all the variable used inside of the closure
     // or simply takes ownership of all the variables used inside of a closure
     closure(move ||{
         v.push(5);
     });
     // without the move keyword this closure
-    // would have lived just until here and wont be able to
-    // use the vectore defined inside the main
+    // would have lived just until here and won't be able to
+    // use the vector defined inside the main
 }
